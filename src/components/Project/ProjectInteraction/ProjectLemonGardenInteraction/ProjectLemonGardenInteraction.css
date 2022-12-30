@@ -1,0 +1,22 @@
+.project-lemon-garden-interaction__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+  text-align: center;
+  gap: 30px;
+}
+@media (max-width: 1170px) {
+  .project-lemon-garden-interaction__container {
+    padding-bottom: calc(50px + 30 * ((100vw - 320px) / 850));
+  }
+}
+
+.project-lemon-garden-interaction__download {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+/*# sourceMappingURL=ProjectLemonGardenInteraction.css.map */

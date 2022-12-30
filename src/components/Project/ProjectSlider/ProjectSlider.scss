@@ -1,0 +1,21 @@
+.project-slider {
+  padding-bottom: 15px;
+  --swiper-navigation-color: #fff;
+}
+
+.swiper-slide {
+  width: auto;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.slide-image {
+  @media (max-width: 600px) {
+    width: 100%;
+    height: auto;
+  }
+  width: 600px;
+  height: 400px;
+}
+

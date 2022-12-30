@@ -1,0 +1,29 @@
+.article-header__line {
+  width: 100%;
+  height: 3px;
+  background-color: #F2C231;
+}
+
+.article-header__title {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media (max-width: 1170px) {
+  .article-header__title {
+    padding-top: calc(30px + 20 * ((100vw - 320px) / 850));
+  }
+}
+@media (max-width: 1170px) {
+  .article-header__title {
+    padding-bottom: calc(30px + 20 * ((100vw - 320px) / 850));
+  }
+}
+
+.article-header__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  align-items: center;
+}
+
+/*# sourceMappingURL=ArticleHeader.css.map */

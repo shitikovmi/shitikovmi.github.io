@@ -1,0 +1,34 @@
+@import "../../../scss/mixins";
+
+.contacts-feedback__title {
+  margin: 15px 0 40px 0;
+}
+
+.contacts-feedback {
+  @include adaptive-value(padding-bottom, 90, 65, 1);
+}
+
+.contacts-feedback__subtitle {
+  @include adaptive-value(margin-top, 85, 55, 1);
+}
+
+.contacts-feedback__form {
+  @media (max-width: $md2 + px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.contacts-feedback__img {
+  @media (max-width: 350px) {
+    width: 100%;
+    height: auto;
+  }
+  @media (max-width: $md2 + px) {
+    margin-top: 55px;
+  }
+  display: flex;
+}

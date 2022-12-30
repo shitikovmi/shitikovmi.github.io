@@ -1,0 +1,117 @@
+@media (max-width: 800px) {
+  .project-luxury-villas-interaction__villas {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.project-luxury-villas-interaction__plan {
+  width: 360px;
+  height: 380px;
+}
+@media (max-width: 360px) {
+  .project-luxury-villas-interaction__plan {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.project-luxury-villas-interaction__row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+@media (max-width: 1100px) {
+  .project-luxury-villas-interaction__row {
+    padding: 10px 0;
+  }
+  .project-luxury-villas-interaction__row:nth-child(2) {
+    flex-direction: column;
+  }
+}
+
+.project-luxury-villas-interaction__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 25px;
+}
+@media (max-width: 1100px) {
+  .project-luxury-villas-interaction__box {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+}
+
+.project-luxury-villas-interaction__container {
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+}
+@media (max-width: 1100px) {
+  .project-luxury-villas-interaction__container {
+    gap: 0;
+  }
+}
+@media (max-width: 1170px) {
+  .project-luxury-villas-interaction__container {
+    padding-bottom: calc(55px + 35 * ((100vw - 320px) / 850));
+  }
+}
+.project-luxury-villas-interaction__container h2 {
+  text-align: center;
+  line-height: 100%;
+}
+
+.project-luxury-villas-interaction__button-primary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1D1D1D;
+}
+@media (max-width: 470px) {
+  .project-luxury-villas-interaction__button-primary {
+    padding: 15px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 470px) {
+  .project-luxury-villas-interaction__button-secondary {
+    padding: 15px;
+  }
+}
+
+.project-luxury-villas-interaction__arrow-right {
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.project-luxury-villas-interaction__arrow-left {
+  cursor: pointer;
+  transform: rotate(-90deg);
+}
+
+.project-luxury-villas-interaction__plan-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+@media (max-width: 400px) {
+  .project-luxury-villas-interaction__plan-block {
+    width: 300px;
+    padding: 0;
+    height: auto;
+  }
+  .project-luxury-villas-interaction__plan-block img {
+    width: 290px;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=ProjectLuxuryVillasInteraction.css.map */

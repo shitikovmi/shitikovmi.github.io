@@ -1,0 +1,124 @@
+.project-garden-inn-interaction__apartments {
+  width: 640px;
+  height: 416px;
+}
+@media (max-width: 650px) {
+  .project-garden-inn-interaction__apartments {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.project-garden-inn-interaction__container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+}
+@media (max-width: 1100px) {
+  .project-garden-inn-interaction__container {
+    gap: 0;
+  }
+}
+@media (max-width: 1170px) {
+  .project-garden-inn-interaction__container {
+    padding-top: calc(55px + 35 * ((100vw - 320px) / 850));
+  }
+}
+@media (max-width: 1170px) {
+  .project-garden-inn-interaction__container {
+    padding-bottom: calc(55px + 35 * ((100vw - 320px) / 850));
+  }
+}
+.project-garden-inn-interaction__container h2 {
+  text-align: center;
+  line-height: 100%;
+}
+
+.project-garden-inn-interaction__row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+@media (max-width: 1100px) {
+  .project-garden-inn-interaction__row {
+    padding: 10px 0;
+  }
+}
+
+.project-garden-inn-interaction__box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 25px;
+}
+@media (max-width: 1100px) {
+  .project-garden-inn-interaction__box {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0;
+  }
+}
+
+.project-garden-inn-interaction__button-primary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1D1D1D;
+}
+@media (max-width: 470px) {
+  .project-garden-inn-interaction__button-primary {
+    padding: 10px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 470px) {
+  .project-garden-inn-interaction__button-secondary {
+    padding: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+
+.project-garden-inn-interaction__plan-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-garden-inn-interaction__arrow-right {
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.project-garden-inn-interaction__arrow-left {
+  cursor: pointer;
+  transform: rotate(-90deg);
+}
+
+.project-garden-inn-interaction__text {
+  color: #144E5E;
+  font-weight: 600;
+}
+
+@media (max-width: 450px) {
+  .project-garden-inn-interaction__download {
+    flex-direction: column;
+  }
+}
+
+.project-garden-inn-interaction__plan-img {
+  max-width: 300px;
+  object-fit: contain;
+}
+@media (max-width: 500px) {
+  .project-garden-inn-interaction__plan-img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=ProjectGardenInnInteraction.css.map */

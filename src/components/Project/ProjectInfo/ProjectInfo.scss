@@ -1,0 +1,102 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.project-info__container {
+  @include adaptive-value(padding-top, 40, 30, 1);
+  @include adaptive-value(padding-bottom, 90, 55, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-info__title {
+  @include adaptive-value(margin-bottom, 40, 15, 1);
+}
+
+.project-info__box {
+  @media (max-width: 1200px) {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+.project-info-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.project-info-details__box {
+  @include adaptive-value(gap, 15, 10, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-info-details__text {
+  @include adaptive-value(font-size, 22, 18, 1);
+  span {
+    font-weight: 400;
+  }
+  font-weight: 600;
+}
+
+.project-info-details__progress {
+  @include adaptive-value(font-size, 22, 18, 1);
+  gap: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.project-info-details__button {
+  @media (max-width: 400px) {
+    width: 100%;
+    height: auto;
+  }
+  width: 330px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  color: $mainColor;
+}
+
+.project-info__img {
+  @media (max-width: 715px) {
+    width: 344px;
+    height: 380px;
+  }
+  @media (max-width: 400px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  span {
+    font-weight: 400;
+  }
+  visibility: hidden;
+  border-top: 7px solid #F2C231;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.14);
+  background-color: $white;
+  width: 300px;
+  padding: 20px 10px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

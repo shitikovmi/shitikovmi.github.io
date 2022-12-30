@@ -1,0 +1,93 @@
+@import "variables";
+@import "mixins";
+
+.container {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  @media (max-width: $md1 + px) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 5px;
+  }
+}
+
+.title {
+  @include adaptive-value(font-size, 44, 24, 1);
+  line-height: 150%;
+  font-weight: 600;
+}
+
+.title-small {
+  @include adaptive-value(font-size, 32, 20, 1);
+  font-weight: 600;
+}
+
+.button-primary {
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: $transitionValue;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: $yellow;
+  padding: 20px 40px;
+  border-radius: 3px;
+  &:hover {
+    box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  }
+}
+
+.button-secondary {
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: $transitionValue;
+  cursor: pointer;
+  font-size: 18px;
+  color: $white;
+  background-color: $blue;
+  padding: 20px 40px;
+  border-radius: 3px;
+  &:hover {
+    box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  }
+}
+
+.text-small {
+  @include adaptive-value(line-height, 21, 19, 1);
+  @include adaptive-value(font-size, 18, 16, 1);
+  font-weight: 500;
+}
+
+.text-big {
+  font-weight: 500;
+  @include adaptive-value(line-height, 21, 19, 1);
+  @include adaptive-value(font-size, 22, 16, 1);
+}
+
+.subtitle {
+  @include adaptive-value(font-size, 18, 14, 1);
+  @include adaptive-value(line-height, 21, 16, 1);
+  font-weight: 500;
+}
+
+.learn-more-link {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  color: $blue;
+  font-weight: 600;
+  cursor: pointer;
+  transition: $transitionValue;
+  &:hover {
+    color: $yellow;
+  }
+}

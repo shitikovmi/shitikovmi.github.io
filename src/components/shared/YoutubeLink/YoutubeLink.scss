@@ -1,0 +1,67 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.youtube-mobile {
+  @media (min-width: 700px) {
+    display: none;
+  }
+}
+
+.youtube-mobile-info__subtitle {
+  @include adaptive-value(font-size, 18, 16, 1);
+}
+
+.youtube-info__link {
+  color: $mainColor;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 0;
+}
+
+.youtube-mobile-link {
+  height: 340px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.youtube-pc {
+  @media (max-width: 700px) {
+    display: none;
+  }
+  height: 340px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.youtube-pc__container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.youtube-pc-link {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.youtube-pc-info {
+  .youtube-info__link {
+    color: $white;
+  }
+  flex: 0 0 50%;
+  color: $white;
+}
+
+.youtube-pc-link__button {
+  &:hover {
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  }
+  transition: $transitionValue;
+  border-radius: 50%;
+}

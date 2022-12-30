@@ -1,0 +1,41 @@
+@import "../../../scss/mixins";
+
+.home-about__container {
+  @media (max-width: $md2 + px) {
+    flex-direction: column;
+  }
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.home-about {
+  @include adaptive-value(padding-top, 90, 55, 1);
+  @include adaptive-value(padding-bottom, 90, 55, 1);
+}
+
+.home-about__description {
+  @include adaptive-value(padding-top, 50, 25, 1);
+  @include adaptive-value(padding-bottom, 50, 25, 1);
+}
+
+.home-about__box {
+  @media (max-width: $md2 + px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.home-about__img {
+  width: 520px;
+  height: 343px;
+  @media (max-width: 550px) {
+    width: 100%;
+    height: auto;
+  }
+  @media (max-width: 340px) {
+    width: 300px;
+    height: auto;
+  }
+}

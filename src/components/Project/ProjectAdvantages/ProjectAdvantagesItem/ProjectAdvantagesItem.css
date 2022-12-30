@@ -1,0 +1,35 @@
+.project-advantages-item {
+  width: 360px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+@media (max-width: 1170px) {
+  .project-advantages-item {
+    width: calc(300px + 60 * ((100vw - 320px) / 850));
+  }
+}
+
+.project-advantages-item__img {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-advantages-item__text {
+  flex: 1 1 50%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=ProjectAdvantagesItem.css.map */

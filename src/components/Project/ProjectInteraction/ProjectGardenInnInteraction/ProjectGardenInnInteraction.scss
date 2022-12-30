@@ -1,0 +1,105 @@
+@import "../../../../scss/mixins";
+@import "../../../../scss/variables";
+
+.project-garden-inn-interaction__apartments {
+  @media (max-width: 650px) {
+    width: 100%;
+    height: auto;
+  }
+  width: 640px;
+  height: 416px;
+}
+
+.project-garden-inn-interaction__container {
+  @media (max-width: 1100px) {
+    gap: 0;
+  }
+  @include adaptive-value(padding-top, 90, 55, 1);
+  @include adaptive-value(padding-bottom, 90, 55, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+  h2 {
+    text-align: center;
+    line-height: 100%;
+  }
+}
+
+.project-garden-inn-interaction__row {
+  @media (max-width: 1100px) {
+    padding: 10px 0;
+  }
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.project-garden-inn-interaction__box {
+  @media (max-width: 1100px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0;
+  }
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 25px;
+}
+
+
+
+.project-garden-inn-interaction__button-primary {
+  @media (max-width: 470px) {
+    padding: 10px;
+    white-space: nowrap;
+  }
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: $mainColor;
+}
+
+.project-garden-inn-interaction__button-secondary {
+  @media (max-width: 470px) {
+    padding: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+
+.project-garden-inn-interaction__plan-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-garden-inn-interaction__arrow-right {
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.project-garden-inn-interaction__arrow-left {
+  cursor: pointer;
+  transform: rotate(-90deg);
+}
+
+.project-garden-inn-interaction__text {
+  color: $blue;
+  font-weight: 600;
+}
+
+.project-garden-inn-interaction__download {
+  @media (max-width: 450px) {
+    flex-direction: column;
+  }
+}
+
+.project-garden-inn-interaction__plan-img {
+  @media (max-width: 500px) {
+    width: 90%;
+    height: auto;
+  }
+  max-width: 300px;
+  object-fit: contain;
+}

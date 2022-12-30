@@ -1,0 +1,67 @@
+.home-about__container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 991.98px) {
+  .home-about__container {
+    flex-direction: column;
+  }
+}
+
+.home-about {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+@media (max-width: 1170px) {
+  .home-about {
+    padding-top: calc(55px + 35 * ((100vw - 320px) / 850));
+  }
+}
+@media (max-width: 1170px) {
+  .home-about {
+    padding-bottom: calc(55px + 35 * ((100vw - 320px) / 850));
+  }
+}
+
+.home-about__description {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media (max-width: 1170px) {
+  .home-about__description {
+    padding-top: calc(25px + 25 * ((100vw - 320px) / 850));
+  }
+}
+@media (max-width: 1170px) {
+  .home-about__description {
+    padding-bottom: calc(25px + 25 * ((100vw - 320px) / 850));
+  }
+}
+
+@media (max-width: 991.98px) {
+  .home-about__box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.home-about__img {
+  width: 520px;
+  height: 343px;
+}
+@media (max-width: 550px) {
+  .home-about__img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 340px) {
+  .home-about__img {
+    width: 300px;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=HomeAbout.css.map */

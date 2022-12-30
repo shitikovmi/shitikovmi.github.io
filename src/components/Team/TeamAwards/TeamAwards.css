@@ -1,0 +1,15 @@
+.team-awards__title {
+  display: flex;
+  justify-content: center;
+}
+
+.team-awards__container {
+  padding-top: 80px;
+}
+@media (max-width: 1170px) {
+  .team-awards__container {
+    padding-top: calc(50px + 30 * ((100vw - 320px) / 850));
+  }
+}
+
+/*# sourceMappingURL=TeamAwards.css.map */

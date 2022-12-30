@@ -1,0 +1,58 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.home-introduction {
+  position: relative;
+}
+
+.home-introduction__box {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.home-introduction__container {
+  @media (max-width: 1200px) {
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
+  @media (max-width: 1400px) {
+    top: 10%;
+  }
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+
+.home-introduction__button {
+  @media (max-width: 400px) {
+    width: 310px;
+    gap: 1px;
+    padding: 15px 10px;
+  }
+  padding: 20px 15px;
+  font-size: 16px;
+  width: 380px;
+  gap: 10px;
+  color: $mainColor;
+}
+
+.home-introduction__title {
+  @media (max-width: 1200px) {
+    color: $mainColor;
+    margin-top: 20px;
+  }
+  @media (max-width: 400px) {
+    font-size: 21px;
+  }
+  color: $white;
+  font-size: 34px;
+}
+
+.home-introduction__text {
+  @media (max-width: 1200px) {
+    color: $mainColor;
+  }
+  color: $white;
+}

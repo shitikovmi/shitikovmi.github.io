@@ -1,0 +1,31 @@
+.contact-form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media (max-width: 1170px) {
+  .contact-form {
+    width: calc(300px + 100 * ((100vw - 320px) / 850));
+  }
+}
+
+.contact-form__input {
+  transition: all 0.3s linear;
+  border-bottom: 1px solid #144E5E;
+  border-radius: 3px;
+  padding: 10px 18px;
+}
+.contact-form__input:focus {
+  background-color: #144E5E;
+  color: #fff;
+}
+.contact-form__input:focus::placeholder {
+  color: #fff;
+}
+
+.contact-form__error {
+  color: #144E5E;
+}
+
+/*# sourceMappingURL=ContactForm.css.map */

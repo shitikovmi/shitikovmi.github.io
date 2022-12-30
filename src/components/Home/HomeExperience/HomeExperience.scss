@@ -1,0 +1,35 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.home-experience {
+  background: url("../../../assets/content/home/homeExperience/01.jpg") no-repeat;
+  background-size: cover;
+}
+
+.home-experience__container {
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  @include adaptive-value(gap, 35, 25, 1);
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-experience__title {
+  @include adaptive-value(font-size, 44, 22, 1);
+  text-align: center;
+  color: $white;
+}
+.home-experience__subtitle {
+  @include adaptive-value(font-size, 18, 14, 1);
+  color: $white;
+  text-align: center;
+}
+
+.home-experience__button {
+  @media (max-width: 400px) {
+    width: 300px;
+  }
+  color: $mainColor;
+  width: 330px;
+}

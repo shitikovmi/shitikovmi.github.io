@@ -1,0 +1,73 @@
+@media (min-width: 700px) {
+  .youtube-mobile {
+    display: none;
+  }
+}
+
+.youtube-mobile-info__subtitle {
+  font-size: 18px;
+}
+@media (max-width: 1170px) {
+  .youtube-mobile-info__subtitle {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 850));
+  }
+}
+
+.youtube-info__link {
+  color: #1D1D1D;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 0;
+}
+
+.youtube-mobile-link {
+  height: 340px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.youtube-pc {
+  height: 340px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 700px) {
+  .youtube-pc {
+    display: none;
+  }
+}
+
+.youtube-pc__container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.youtube-pc-link {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.youtube-pc-info {
+  flex: 0 0 50%;
+  color: #fff;
+}
+.youtube-pc-info .youtube-info__link {
+  color: #fff;
+}
+
+.youtube-pc-link__button {
+  transition: all 0.3s linear;
+  border-radius: 50%;
+}
+.youtube-pc-link__button:hover {
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+/*# sourceMappingURL=YoutubeLink.css.map */

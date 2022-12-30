@@ -1,0 +1,30 @@
+.home-projects {
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+@media (max-width: 1170px) {
+  .home-projects {
+    padding-bottom: calc(55px + 35 * ((100vw - 320px) / 850));
+  }
+}
+
+.home-projects__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-projects__box {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 1200px) {
+  .home-projects__box {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+/*# sourceMappingURL=HomeProjects.css.map */

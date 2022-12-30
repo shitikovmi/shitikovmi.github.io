@@ -1,0 +1,19 @@
+.team-employees__title {
+  display: flex;
+  justify-content: center;
+}
+
+.team-employees__box {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 1170px) {
+  .team-employees__box {
+    margin-top: calc(15px + 25 * ((100vw - 320px) / 850));
+  }
+}
+
+/*# sourceMappingURL=TeamEmployees.css.map */

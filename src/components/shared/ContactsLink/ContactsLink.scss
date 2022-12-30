@@ -1,0 +1,20 @@
+@import "../../../scss/mixins";
+
+.contacts-link {
+  @include adaptive-value(padding-top, 90, 35, 1);
+  @include adaptive-value(padding-bottom, 90, 70, 1);
+}
+
+.contacts-link__button {
+  @include adaptive-value(margin-top, 55, 40, 1);
+  gap: 10px;
+}
+
+.contacts-link__subtitle {
+  margin-top: 15px;
+}
+
+.contacts-link__button {
+  color: $mainColor;
+  @include adaptive-value(width, 400, 300, 1);
+}

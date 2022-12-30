@@ -1,0 +1,14 @@
+@import "../../../scss/mixins";
+
+.team-employees__title {
+  display: flex;
+  justify-content: center;
+}
+
+.team-employees__box {
+  @include adaptive-value(margin-top, 40, 15, 1);
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

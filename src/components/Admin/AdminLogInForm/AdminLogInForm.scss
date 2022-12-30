@@ -1,0 +1,29 @@
+@import "../../../scss/variables";
+
+.admin-log-in-form__form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-log-in-form__title {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.admin-log-in-form__input {
+  border-bottom: 1px solid #144E5E;
+  border-radius: 3px;
+  padding: 10px 18px;
+}
+
+.admin-log-in-form {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}

@@ -1,0 +1,10 @@
+.whats-app-button {
+  @media (max-width: 450px) {
+    left: 25px;
+    bottom: 25px;
+  }
+  position:fixed;
+  bottom: 50px;
+  left: 50px;
+  z-index:999;
+}

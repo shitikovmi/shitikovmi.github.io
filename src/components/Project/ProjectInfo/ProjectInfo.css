@@ -1,0 +1,137 @@
+.project-info__container {
+  padding-top: 40px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1170px) {
+  .project-info__container {
+    padding-top: calc(30px + 10 * ((100vw - 320px) / 850));
+  }
+}
+@media (max-width: 1170px) {
+  .project-info__container {
+    padding-bottom: calc(55px + 35 * ((100vw - 320px) / 850));
+  }
+}
+
+.project-info__title {
+  margin-bottom: 40px;
+}
+@media (max-width: 1170px) {
+  .project-info__title {
+    margin-bottom: calc(15px + 25 * ((100vw - 320px) / 850));
+  }
+}
+
+.project-info__box {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .project-info__box {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+}
+
+.project-info-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.project-info-details__box {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1170px) {
+  .project-info-details__box {
+    gap: calc(10px + 5 * ((100vw - 320px) / 850));
+  }
+}
+
+.project-info-details__text {
+  font-size: 22px;
+  font-weight: 600;
+}
+@media (max-width: 1170px) {
+  .project-info-details__text {
+    font-size: calc(18px + 4 * ((100vw - 320px) / 850));
+  }
+}
+.project-info-details__text span {
+  font-weight: 400;
+}
+
+.project-info-details__progress {
+  font-size: 22px;
+  gap: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1170px) {
+  .project-info-details__progress {
+    font-size: calc(18px + 4 * ((100vw - 320px) / 850));
+  }
+}
+
+.project-info-details__button {
+  width: 330px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #1D1D1D;
+}
+@media (max-width: 400px) {
+  .project-info-details__button {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 715px) {
+  .project-info__img {
+    width: 344px;
+    height: 380px;
+  }
+}
+@media (max-width: 400px) {
+  .project-info__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  border-top: 7px solid #F2C231;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.14);
+  background-color: #fff;
+  width: 300px;
+  padding: 20px 10px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+.tooltip .tooltiptext span {
+  font-weight: 400;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=ProjectInfo.css.map */

@@ -1,0 +1,26 @@
+.project-slider {
+  padding-bottom: 15px;
+  --swiper-navigation-color: #fff;
+}
+
+.swiper-slide {
+  width: auto;
+}
+@media (max-width: 600px) {
+  .swiper-slide {
+    width: 100%;
+  }
+}
+
+.slide-image {
+  width: 600px;
+  height: 400px;
+}
+@media (max-width: 600px) {
+  .slide-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=ProjectSlider.css.map */

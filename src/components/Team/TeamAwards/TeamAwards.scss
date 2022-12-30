@@ -1,0 +1,10 @@
+@import "../../../scss/mixins";
+
+.team-awards__title {
+  display: flex;
+  justify-content: center;
+}
+
+.team-awards__container {
+  @include adaptive-value(padding-top, 80, 50, 1);
+}

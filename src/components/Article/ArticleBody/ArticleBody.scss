@@ -1,0 +1,77 @@
+@import "../../../scss/mixins";
+@import "../../../scss/variables";
+
+.article-body__container {
+  @include adaptive-value(padding-bottom, 90, 55, 1);
+  max-width: 800px;
+}
+
+.article-body__text {
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  p {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 500;
+  }
+
+  h2 {
+    @include adaptive-value(font-size, 22, 18, 1);
+    position: relative;
+    font-weight: 500;
+    line-height: 150%;
+    &::before {
+      content: '';
+      background-color: $yellow;
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+      position: relative;
+      left: 20px;
+      top: 5px;
+      z-index: -1;
+    }
+  }
+
+  ol {
+    list-style-type: none;
+    counter-reset: li;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  li {
+    line-height: 150%;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  li:before {
+    counter-increment: li;
+    content: counter(li, decimal-leading-zero);
+    font-weight: 500;
+    font-size: 32px;
+    color: $yellow;
+    margin-right: 0.25em;
+  }
+}
+
+.article-body__title {
+  @include adaptive-value(font-size, 32, 24, 1);
+  @include adaptive-value(line-height, 38, 28, 1);
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.article-body__date {
+  padding: 5px 0 40px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $darkGrey;
+}
+

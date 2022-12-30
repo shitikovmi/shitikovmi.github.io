@@ -1,0 +1,42 @@
+@import "../../../scss/mixins";
+
+.team-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-about__title {
+  display: flex;
+  justify-content: center;
+}
+
+.team-about__box {
+  @media(max-width: 1200px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  @include adaptive-value(padding-bottom, 90, 55, 1);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team-about__subtitle {
+  @include adaptive-value(padding-bottom, 40, 15, 1);
+  @include adaptive-value(padding-top, 35, 15, 1);
+  display: flex;
+  justify-content: center;
+}
+
+.team-about__title {
+  @include adaptive-value(padding-top, 50, 30, 1);
+}
+
+.team-about__img {
+  @media (max-width: 1200px) {
+    display: none;
+  }
+  @include adaptive-value(width, 550, 300, 1);
+  height: auto;
+}

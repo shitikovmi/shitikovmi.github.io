@@ -1,0 +1,241 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/mixins";
+
+.project-botanical-garden-resort-interaction__info {
+  @media (max-width: 775px) {
+    display: none;
+  }
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  top: 60px;
+  position: absolute;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  border-top: 7px solid #F2C231;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.14);
+  left: 15px;
+  span {
+    margin-left: 5px;
+    font-family: Arial, sans-serif;
+  }
+}
+
+.project-botanical-garden-resort-interaction__container {
+  display: flex;
+  overflow: hidden;
+  @include adaptive-value(padding-bottom, 90, 55, 1);
+  flex-direction: column;
+  user-select: none;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  h2 {
+    text-align: center;
+  }
+}
+
+.project-botanical-garden-resort-interaction__apartments {
+  @media (max-width: 1220px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.project-botanical-garden-resort-interaction__building {
+  @media (max-width: 800px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.project-botanical-garden-resort-interaction__box {
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    &:last-child {
+      gap: 15px;
+    }
+  }
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-botanical-garden-resort-interaction__plan-block {
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: auto;
+}
+
+.project-botanical-garden-resort-interaction__plan-img {
+  @media (max-width: 500px) {
+    width: 100%;
+    height: auto;
+  }
+  max-width: 300px;
+  object-fit: contain;
+}
+
+.project-botanical-garden-resort-interaction__arrow-right {
+  transform: rotate(90deg);
+  cursor: pointer;
+  @media (max-width: 400px) {
+    transform: rotate(90deg) translateY(300%);
+  }
+}
+
+.project-botanical-garden-resort-interaction__arrow-left {
+  transform: rotate(-90deg);
+  cursor: pointer;
+  @media (max-width: 400px) {
+    transform: rotate(-90deg) translateY(300%);
+  }
+}
+
+.project-botanical-garden-resort-interaction__button-secondary {
+  @media (max-width: 470px) {
+    padding: 15px;
+  }
+  min-width: 130px;
+}
+
+.project-botanical-garden-resort-interaction__button-primary {
+  @media (max-width: 470px) {
+    padding: 15px;
+    white-space: nowrap;
+  }
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: $mainColor;
+}
+
+.project-botanical-garden-resort-interaction__row {
+  @media (max-width: 1100px) {
+    padding: 10px 0;
+    &:nth-child(2) {
+      flex-direction: column;
+    }
+  }
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.project-botanical-garden-resort-interaction__plan-info {
+  position: absolute;
+  left: 50%;
+  white-space: nowrap;
+  transform: translate(-50%, -100%);
+  text-align: center;
+  top: 0;
+}
+
+.project-botanical-garden-resort-interaction_apartments {
+  width: 100%;
+  height: auto;
+}
+
+.project-botanical-garden-resort-interaction__apartments-box {
+  position: relative;
+}
+
+.project-botanical-garden-resort-interaction__controls {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 899;
+  color: $blue;
+  gap: 15px;
+  bottom: 15px;
+  right: 15px;
+}
+
+.project-botanical-garden-resort-interaction__inc {
+  &:hover {
+    box-shadow: 0px 0px 1px 1px rgba(255,255,255,1);
+  }
+  cursor: pointer;
+  text-align: center;
+  transition: $transitionValue;
+  vertical-align: center;
+  font-size: 32px;
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.project-botanical-garden-resort-interaction__dec {
+  &:hover {
+    box-shadow: 0px 0px 1px 1px rgba(255,255,255,1);
+  }
+  cursor: pointer;
+  text-align: center;
+  transition: $transitionValue;
+  font-weight: 600;
+  vertical-align: center;
+  font-size: 32px;
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.project-botanical-garden-resort-interaction__floor-counter {
+  position: absolute;
+  top: 15px;
+  color: $blue;
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 8px;
+  left: 15px;
+  z-index: 999;
+}
+
+.indicators {
+  display: flex;
+  @media (max-width: 1100px) {
+    align-items: center;
+  }
+  gap: 10px;
+  flex-direction: column;
+}
+
+.indicator__sold {
+  width: 30px;
+  height: 15px;
+  background-color: #B92222;
+  opacity: 0.5;
+}
+
+.indicator__reserved {
+  width: 30px;
+  height: 15px;
+  background-color: #E77206;
+  opacity: 0.5;
+}
+
+.indicator {
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  gap: 10px;
+}
+
+.download {
+  @media (max-width: 1100px) {
+    flex-direction: column;
+  }
+}
+
+.plan-interaction__img {
+  width: 100%;
+  height: auto;
+}

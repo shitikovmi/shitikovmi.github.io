@@ -1,0 +1,17 @@
+@import "../../../../scss/mixins";
+
+.project-lemon-garden-interaction__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include adaptive-value(padding-bottom, 80, 50, 1);
+  text-align: center;
+  gap: 30px;
+}
+
+.project-lemon-garden-interaction__download {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}

@@ -1,0 +1,52 @@
+.home-experience {
+  background: url("../../../assets/content/home/homeExperience/01.jpg") no-repeat;
+  background-size: cover;
+}
+
+.home-experience__container {
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  gap: 35px;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1170px) {
+  .home-experience__container {
+    gap: calc(25px + 10 * ((100vw - 320px) / 850));
+  }
+}
+
+.home-experience__title {
+  font-size: 44px;
+  text-align: center;
+  color: #fff;
+}
+@media (max-width: 1170px) {
+  .home-experience__title {
+    font-size: calc(22px + 22 * ((100vw - 320px) / 850));
+  }
+}
+
+.home-experience__subtitle {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 1170px) {
+  .home-experience__subtitle {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 850));
+  }
+}
+
+.home-experience__button {
+  color: #1D1D1D;
+  width: 330px;
+}
+@media (max-width: 400px) {
+  .home-experience__button {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=HomeExperience.css.map */

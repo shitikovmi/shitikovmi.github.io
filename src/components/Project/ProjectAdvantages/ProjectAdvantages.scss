@@ -1,0 +1,25 @@
+@import "../../../scss/mixins";
+
+.project-advantages__container {
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
+  @include adaptive-value(padding-top, 75, 55, 1);
+  @include adaptive-value(padding-bottom, 90, 55, 1);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.project-advantages__column {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 25%;
+  gap: 15px;
+}
+
+.project-advantages__title {
+  @include adaptive-value(padding-bottom, 35, 25, 1);
+  text-align: center;
+}

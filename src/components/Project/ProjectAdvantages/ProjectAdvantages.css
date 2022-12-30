@@ -1,0 +1,42 @@
+.project-advantages__container {
+  padding-top: 75px;
+  padding-bottom: 90px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+@media (max-width: 1200px) {
+  .project-advantages__container {
+    justify-content: center;
+  }
+}
+@media (max-width: 1170px) {
+  .project-advantages__container {
+    padding-top: calc(55px + 20 * ((100vw - 320px) / 850));
+  }
+}
+@media (max-width: 1170px) {
+  .project-advantages__container {
+    padding-bottom: calc(55px + 35 * ((100vw - 320px) / 850));
+  }
+}
+
+.project-advantages__column {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 25%;
+  gap: 15px;
+}
+
+.project-advantages__title {
+  padding-bottom: 35px;
+  text-align: center;
+}
+@media (max-width: 1170px) {
+  .project-advantages__title {
+    padding-bottom: calc(25px + 10 * ((100vw - 320px) / 850));
+  }
+}
+
+/*# sourceMappingURL=ProjectAdvantages.css.map */

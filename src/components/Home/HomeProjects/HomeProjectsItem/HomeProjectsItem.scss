@@ -1,0 +1,88 @@
+@import "../../../../scss/mixins";
+@import "../../../../scss/variables";
+
+.home-projects-item {
+  display: flex;
+  transition: $transitionValue;
+  color: black;
+  flex-direction: column;
+  @include adaptive-value(width, 380, 300, 1);
+  &:hover {
+    padding-bottom: 70px;
+    .home-projects-item-dropdown {
+      bottom: -70px;
+      opacity: 1;
+    }
+  }
+}
+
+.home-projects-item__name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0C323D;
+}
+
+.home-projects-item__description {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.home-projects-item__box {
+  padding: 25px;
+  min-height: 180px;
+  position: relative;
+  box-shadow:
+          4px 4px 6px -1px rgba(0, 0, 0, 0.1),
+          -4px 4px 6px -1px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.home-projects-item-dropdown {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  box-shadow:
+          4px 4px 6px -1px rgba(0, 0, 0, 0.1),
+          -4px 4px 6px -1px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  background-color: $white;
+  padding: 25px;
+  transition: $transitionValue;
+  left: 0;
+  opacity: 0;
+}
+
+.home-projects-item-dropdown__delivery {
+  font-size: 14px;
+  line-height: 15px;
+  span {
+    font-weight: 600;
+  }
+}
+
+.home-projects-item-dropdown__sales {
+  font-size: 14px;
+  padding: 10px 5px 5px 15px;
+  font-weight: 600;
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 0;
+    content: "";
+    display: inline-block;
+    left: 0;
+    border-left: 20px solid white;
+    border-bottom: 20px solid transparent;
+  }
+}
+
+.home-projects-item-dropdown__sales-open {
+  background-color: $yellow;
+}
+
+.home-projects-item-dropdown__sales-closed {
+  background-color: $grey;
+  font-size: 14px;
+}

@@ -1,0 +1,40 @@
+.contacts-link {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+@media (max-width: 1170px) {
+  .contacts-link {
+    padding-top: calc(35px + 55 * ((100vw - 320px) / 850));
+  }
+}
+@media (max-width: 1170px) {
+  .contacts-link {
+    padding-bottom: calc(70px + 20 * ((100vw - 320px) / 850));
+  }
+}
+
+.contacts-link__button {
+  margin-top: 55px;
+  gap: 10px;
+}
+@media (max-width: 1170px) {
+  .contacts-link__button {
+    margin-top: calc(40px + 15 * ((100vw - 320px) / 850));
+  }
+}
+
+.contacts-link__subtitle {
+  margin-top: 15px;
+}
+
+.contacts-link__button {
+  color: #1D1D1D;
+  width: 400px;
+}
+@media (max-width: 1170px) {
+  .contacts-link__button {
+    width: calc(300px + 100 * ((100vw - 320px) / 850));
+  }
+}
+
+/*# sourceMappingURL=ContactsLink.css.map */
